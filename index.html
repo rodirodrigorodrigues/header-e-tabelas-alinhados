@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid de Dias Alinhados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .calendar-wrapper {
+      overflow-x: auto; /* Scroll horizontal se necessário */
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 50%;
+    }
+
+    .calendar-header, .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 120px); /* Cada coluna com 120px */
+      gap: 10px; /* Espaço entre colunas */
+    }
+/* 
+    .calendar-header {
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-align: center;
+    } */
+
+    .calendar-grid .cell {
+      height: 50px;
+      background-color: #ddd;
+      border: 1px solid #aaa;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo de Grid Alinhado</h2>
+
+  <div class="calendar-wrapper">
+    <!-- Cabeçalho dos dias -->
+    <div class="calendar-header">
+      <div>Segunda</div>
+      <div>Terça</div>
+      <div>Quarta</div>
+      <div>Quinta</div>
+      <div>Sexta</div>
+    </div>
+
+    <!-- Grid de células -->
+    <div class="calendar-grid">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+  </div>
+
+</body>
+</html>
